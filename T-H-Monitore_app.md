@@ -1,8 +1,8 @@
-VERSION: 1.0.2
+VERSION: 1.0.3
 NOTES:
-Faster device connection, smooth screen transition, refreshed app icons, and enhanced stability.
-- Faster connection and discovery with real-time status display.
+Fixed in-app installation, improved connection speed, and smooth UI transitions.
+- Fixed in-app update installer permissions for smooth one-tap updates.
+- Faster device connection and live verification status overlay.
 - Smooth return to the scanning screen when device is disconnected.
-- Clean device name, MAC address, and version display.
-- Brand new modern app launcher icons.
-- Reliable in-app application updates.
+- Clean device name, MAC address, and single-V version display.
+- Modern app launcher icons and PriME Technology branding.
