@@ -1,8 +1,8 @@
-VERSION: 1.1.2
+VERSION: 1.1.3
 NOTES:
-Analog Dial Embedded Readout & SOS Disconnect Warning (1.1.2)
-- Overhauled Analog Meter Layout: Removed external bottom readout pill and embedded live digital readout ("--.- °C • --.- %") directly inside the dial face below the humidity sub-dial.
-- Maximized Gauge Diameter: Enlarged dial dimensions (142x142) to utilize available card space for a larger, bolder thermo-hygrometer display.
-- SOS Disconnect Warning: When a sensor is disconnected or inactive, a rhythmic pulsing SOS hazard badge ("⚠️ DISCONNECTED") displays directly over the center of the meter with red glowing border and radiant shadow.
-- Automatic Telemetry Restoration: Seamlessly hides the SOS warning and restores animated pointer needles upon sensor reconnection.
-- Smart Version Comparison & Auto-Update Engine compatibility maintained across all themes (Obsidian Glass, Dark Black, Light White, System).
+Open-Arc Analog Dial, 1:1 Square Cards & Fixed Persistent Footer (1.1.3)
+- Open-Arc Dial Aesthetic: Removed outer gray/red circular boundary outline from both the main temperature gauge and humidity sub-gauge; both now render as clean, modern open-arc sweeps.
+- Lowered Humidity Sub-Dial: Shifted humidity sub-dial center lower down so the main needle pivot and sweep do not enter into or overlap the humidity center circle.
+- 1:1 Square Gauge Cards: Configured analog gauge cards to childAspectRatio 1.0 (perfect square) and added responsive LayoutBuilder to dynamically expand gauge diameter to full card capacity.
+- Fixed Persistent Footer: Relocated "Powered by PriME Technology" branding directly above the BottomNavigationBar inside the Scaffold dock; permanently fixed across all 4 tabs (Preview, Relays, Config, Settings), immune to scroll shifts or card clipping.
+- ESP32 Firmware Compatibility: Full BLE telemetry & matrix control preserved with firmware V1.1.2.
