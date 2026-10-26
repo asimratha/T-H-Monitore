@@ -1,8 +1,10 @@
-VERSION: 1.1.3
+VERSION: 1.1.4
 NOTES:
-Open-Arc Analog Dial, 1:1 Square Cards & Fixed Persistent Footer (1.1.3)
-- Open-Arc Dial Aesthetic: Removed outer gray/red circular boundary outline from both the main temperature gauge and humidity sub-gauge; both now render as clean, modern open-arc sweeps.
-- Lowered Humidity Sub-Dial: Shifted humidity sub-dial center lower down so the main needle pivot and sweep do not enter into or overlap the humidity center circle.
-- 1:1 Square Gauge Cards: Configured analog gauge cards to childAspectRatio 1.0 (perfect square) and added responsive LayoutBuilder to dynamically expand gauge diameter to full card capacity.
-- Fixed Persistent Footer: Relocated "Powered by PriME Technology" branding directly above the BottomNavigationBar inside the Scaffold dock; permanently fixed across all 4 tabs (Preview, Relays, Config, Settings), immune to scroll shifts or card clipping.
-- ESP32 Firmware Compatibility: Full BLE telemetry & matrix control preserved with firmware V1.1.2.
+Precision Open-Arc Ticks, Extended Needle, Recalibrated Color Zones & Cold-Start Update Check (1.1.4)
+- Precision Inward Ticks: Added calibrated inward tick marks across both temperature and humidity dials (major 10s bold ticks, mid 5s ticks, and fine minor ticks) matching precision gauge aesthetics.
+- Fixed Missing Temperature Scale Numbers: Resolved missing numbers (-10, 10, 30, 50); full 10-degree progression (-30, -20, -10, 0, 10, 20, 30, 40, 50, 60) now fully legible.
+- Extended Sleek Needles: Needles extended to 92% and 88% radius with slender tapered shafts and circular pivot caps, reaching directly to the colored arc comfort zones.
+- Recalibrated Arc Color Zones:
+  - Temperature: Cold (<18°C Blue #0284C7), Comfort (18°C–26°C Green #10B981), Heat (>26°C Orange #F97316).
+  - Humidity: Dry (<30% Orange #F97316), Comfortable (30%–50% Green #10B981), Sticky/Transient (51%–60% Cyan #06B6D4), Wet (>60% Blue #0284C7).
+- Cold-Start Only App Auto-Update: Removed update check on AppLifecycleState.resumed; auto-checks strictly on initial app open / cold launch.
