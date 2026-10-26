@@ -1,8 +1,8 @@
-VERSION: V1.0.5
+VERSION: V1.0.6
 NOTES:
-Real-time sensor disconnect detection, relay safety shutdown, and auto-recovery.
-- Instant sensor connectivity tracking with automatic disconnect detection (isnan read failure/timeout).
+Immediate live telemetry on subscription, reliable sync, and sensor health monitoring.
+- Immediate dispatch of current live readings (LIVE:T1=...,H1=...,R1=...) on subscription and GET_CONFIG.
+- Eliminates sensor waiting state by instantly transmitting live temperature, humidity, and ERR states.
+- Real-time sensor disconnect detection with automatic background recovery.
 - Safety relay safeguard: automatically deactivates relay output if sensor disconnects.
-- Real-time BLE disconnect telemetry streaming T<ch>=ERR,H<ch>=ERR to alert connected app.
-- Continuous background polling with seamless recovery the moment sensor is plugged back in.
 - Strict on-change BLE notifications and clean serial output.

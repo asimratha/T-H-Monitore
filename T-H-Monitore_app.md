@@ -1,8 +1,8 @@
-VERSION: 1.0.5
+VERSION: 1.0.6
 NOTES:
-High-contrast sensor disconnect detection, full-width alert UI, and auto-recovery.
-- Instant sensor connectivity monitoring with real-time disconnect detection.
-- Full-width stylish warning container: [ ⚠️ NO SENSOR CHANNEL <X> DISCONNECTED ] with amber/red alert design.
-- Live Activity Stream terminal alerts for sensor disconnects and automatic reconnects.
-- Seamless transition back to live temperature, humidity, and relay status upon sensor reconnect.
-- Real-time on-change activity log stream and enhanced overall system stability.
+Resilient BLE sync, 60s radar scanner animation, and instant telemetry.
+- Fixed BLE synchronization: eliminated redundant GET_CONFIG requests and resolved JSON Parse errors.
+- 60-second continuous green neon radar pulse animation on scanning screen.
+- Auto-stops scanning immediately upon device selection (zero background scan overhead).
+- Full-width stylish disconnected sensor alert UI: [ ⚠️ NO SENSOR CHANNEL <X> DISCONNECTED ].
+- Dynamic AppBar subtitle reliably rendering full MAC address and device firmware version.
