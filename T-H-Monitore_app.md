@@ -1,8 +1,8 @@
-VERSION: 1.0.6
+VERSION: 1.0.7
 NOTES:
-Resilient BLE sync, 60s radar scanner animation, and instant telemetry.
-- Fixed BLE synchronization: eliminated redundant GET_CONFIG requests and resolved JSON Parse errors.
-- 60-second continuous green neon radar pulse animation on scanning screen.
-- Auto-stops scanning immediately upon device selection (zero background scan overhead).
-- Full-width stylish disconnected sensor alert UI: [ ⚠️ NO SENSOR CHANNEL <X> DISCONNECTED ].
-- Dynamic AppBar subtitle reliably rendering full MAC address and device firmware version.
+Obsidian Glass (Glassmorphism) theme, frosted cards, and responsive theme selector.
+- Added "Obsidian Glass" theme option inspired by frosted glass & glassmorphic dashboards.
+- Deep obsidian backdrop with translucent frosted card surfaces and specular 1px white border highlights.
+- Frosted nested pill containers for live temperature, humidity, and channel chips.
+- Glowing organic emerald green (#34D399) active indicators and vivid sky cyan accents.
+- Responsive 2x2 grid layout in Settings tab with dedicated theme option tiles.

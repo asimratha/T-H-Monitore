@@ -1,8 +1,8 @@
-VERSION: V1.0.6
+VERSION: V1.0.7
 NOTES:
-Immediate live telemetry on subscription, reliable sync, and sensor health monitoring.
-- Immediate dispatch of current live readings (LIVE:T1=...,H1=...,R1=...) on subscription and GET_CONFIG.
-- Eliminates sensor waiting state by instantly transmitting live temperature, humidity, and ERR states.
-- Real-time sensor disconnect detection with automatic background recovery.
-- Safety relay safeguard: automatically deactivates relay output if sensor disconnects.
-- Strict on-change BLE notifications and clean serial output.
+Firmware V1.0.7 maintenance release with high-reliability live sensor streaming and safety shutdown.
+- FIRMWARE_VER bumped to V1.0.7 aligning with mobile app Obsidian Glass theme update.
+- Instant live sensor data dispatch on subscription (DEV_INFO and LIVE: stream).
+- Sensor disconnect detection with automatic background recovery.
+- Safety relay safeguard: automatically forces relay deactive on sensor timeout/error.
+- PartitionScheme=min_spiffs compilation with full OTA flash support.
