@@ -1,8 +1,8 @@
-VERSION: V1.0.4
+VERSION: V1.0.5
 NOTES:
-Immediate device info handshake, strict on-change telemetry, and clean serial output.
-- Instant device MAC and firmware version handshake upon connection and configuration sync.
-- Strict on-change BLE notifications stream with zero lag and reduced wireless traffic.
-- Clean serial monitor stream reporting only received BLE commands and real-time state changes.
-- Robust multi-channel climate control logic and persistent SPIFFS storage memory.
-- Seamless high-speed wireless firmware updates with progress feedback.
+Real-time sensor disconnect detection, relay safety shutdown, and auto-recovery.
+- Instant sensor connectivity tracking with automatic disconnect detection (isnan read failure/timeout).
+- Safety relay safeguard: automatically deactivates relay output if sensor disconnects.
+- Real-time BLE disconnect telemetry streaming T<ch>=ERR,H<ch>=ERR to alert connected app.
+- Continuous background polling with seamless recovery the moment sensor is plugged back in.
+- Strict on-change BLE notifications and clean serial output.
