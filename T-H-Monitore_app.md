@@ -1,7 +1,7 @@
-VERSION: 1.1.5
+VERSION: 1.1.6
 NOTES:
-Persistent Preferences, 30s Auto-Reconnect, System Dark Refinement & Background Download Notifications (1.1.5)
-- Persistent User Preferences: Saved app theme (system, glass, dark, light) and app style (digital, analog) via SharedPreferences; automatically restored on app startup.
-- 30-Second Auto-Reconnect Engine: Automatically attempts to reconnect to the last connected device for 30 seconds upon startup, seamlessly restoring dashboard without manual scanning if device is in range.
-- System Default Dark Overhaul: Refined pure dark background (#0A0D14), clean dark slate gray surface cards (#141923), subtle slate borders (#21262D), and crisp white typography (#F0F6FC) with dedicated indicator accents.
-- Android Notification Permission & Download Progress: Full POST_NOTIFICATIONS support on Android 13+; live updating percentage & downloaded bytes progress bar in Android notification drawer during update downloads that continues in background if app is minimized.
+Industrial Rotary Relay Knobs, Compact Preview & Analog Sub-Dial Readout Overhaul (1.1.6)
+- Industrial Rotary Knob Relays: Replaced circular relay badges in Analog Meters mode with realistic 3D industrial rotary selector switches matching reference hardware styling (fixed "1" top and "0" left markers, dual-beveled tactile knob handle, glowing Green arrowhead at 12 o'clock when ACTIVE, and glowing Red arrowhead at 9 o'clock when DEACTIVE).
+- Compact Preview Tab: Removed the top "RELAY OUTPUT STATUS" and "Matrix Actuators" header row in Analog Meters mode, reducing card vertical padding to pull the relay card upward for a clean, tightly integrated layout.
+- Sub-Dial "%RH" Overlap Fix: Completely removed "%RH" text from inside the humidity sub-gauge face, ensuring scale numbers 40 and 60 remain 100% visible and un-obstructed.
+- Embedded Digital Readout Overhaul: Replaced center dot separator with slash (" / ") and appended "RH" to humidity (format: "--.- °C / --.- % RH" or "--.- °C / ERR") across all 4 analog gauges.
