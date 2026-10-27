@@ -1,7 +1,9 @@
-VERSION: 1.1.6
+VERSION: 1.1.7
 NOTES:
-Industrial Rotary Relay Knobs, Compact Preview & Analog Sub-Dial Readout Overhaul (1.1.6)
-- Industrial Rotary Knob Relays: Replaced circular relay badges in Analog Meters mode with realistic 3D industrial rotary selector switches matching reference hardware styling (fixed "1" top and "0" left markers, dual-beveled tactile knob handle, glowing Green arrowhead at 12 o'clock when ACTIVE, and glowing Red arrowhead at 9 o'clock when DEACTIVE).
-- Compact Preview Tab: Removed the top "RELAY OUTPUT STATUS" and "Matrix Actuators" header row in Analog Meters mode, reducing card vertical padding to pull the relay card upward for a clean, tightly integrated layout.
-- Sub-Dial "%RH" Overlap Fix: Completely removed "%RH" text from inside the humidity sub-gauge face, ensuring scale numbers 40 and 60 remain 100% visible and un-obstructed.
-- Embedded Digital Readout Overhaul: Replaced center dot separator with slash (" / ") and appended "RH" to humidity (format: "--.- °C / --.- % RH" or "--.- °C / ERR") across all 4 analog gauges.
+Quad LDR Analog Monitoring & Settings Control (1.1.7)
+- LDR Sensor Monitor in Settings: Added dedicated "LDR Sensor Monitor" card with 4 independent toggle switches for LDR 1 (GPIO 36 VP), LDR 2 (GPIO 39 VN), LDR 3 (GPIO 34), and LDR 4 (GPIO 35).
+- Hardware ADC1 Channel Integration: Engineered for ESP32 ADC1 channels, ensuring zero interference with BLE connectivity.
+- Real-Time Command & Sync: Toggling any LDR switch immediately dispatches "SET_LDR_SW" BLE command to ESP32, saved persistently to SPIFFS (/ldr_config.json) across reboots.
+- Automatic State Sync: Switch states automatically restore and synchronize with the mobile app upon connection via GET_CONFIG and DEV_INFO telemetry.
+- Telemetry Streaming: When enabled, ESP32 samples and streams analog readings to Serial Monitor every 1 second ("LDR <X> Value <VALUE>").
+- Bumped app version to 1.1.7 (Build: 1.1.7+18) with clean analyzer verification.
