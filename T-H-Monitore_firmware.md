@@ -1,6 +1,6 @@
-VERSION: V1.1.4
+VERSION: V1.1.5
 NOTES:
 Enhanced device stability, improved sensor response, and reliable settings memory.
-- Smoother sensor reading and rapid response to climate changes.
-- Optimized Bluetooth communication for instant settings sync.
-- Reliable memory protection for custom relay thresholds.
+- Smoother climate sensor readings with rapid environmental response.
+- Rock-solid Bluetooth communication and instant data synchronization.
+- Reliable memory backup for all temperature and humidity automation rules.

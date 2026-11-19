@@ -1,6 +1,6 @@
-VERSION: 1.1.8
+VERSION: 1.1.9
 NOTES:
 Improved device connection, smoother UI transitions, and performance enhancements.
-- Enhanced Apple iOS 18 liquid glass appearance with smoother card animations.
-- Faster and more reliable Bluetooth device auto-reconnect.
-- Improved real-time sensor updates and power management.
+- Added new Dual Liquid Glass styling (Dark and Light) with frosted glass dialogs.
+- Simplified theme settings with automatic screen adaptation.
+- Faster device discovery, smoother animations, and stable performance.
